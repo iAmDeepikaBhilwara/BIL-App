@@ -1,4 +1,30 @@
 
 <ion-content>
-  <ion-nav>Sign In</ion-nav>
+   <button class="position"mat-button [matMenuTriggerFor]="menu">Account</button>
+<mat-menu #menu="matMenu" xPosition="after">
+  <button mat-menu-item>Sign In</button>
+  <button mat-menu-item>Sign Up</button>
+</mat-menu>
+
+
+    <mat-grid-list cols="1" rowHeight="2:1">
+        <mat-grid-tile>
+            <ion-slides pager="true" [options]="slideOpts" #mySlider (ionSlidesDidLoad)="slideDidLoad(mySlider)" autoplay="1000" loop="true" speed="3000" >
+                <ion-slide>
+                  <ion-img src="/assets/fun.png"></ion-img>
+                </ion-slide>
+                <ion-slide>
+                    <ion-img src="/assets/img3.jpg"></ion-img>
+                </ion-slide>
+                 
+                <ion-slide>
+                    <ion-img src="/assets/panda.jpg"></ion-img>
+                </ion-slide>
+              </ion-slides>
+            
+        </mat-grid-tile>
+        <mat-grid-tile>2</mat-grid-tile>
+        <mat-grid-tile>3</mat-grid-tile>
+        <mat-grid-tile>4</mat-grid-tile>
+      </mat-grid-list>
 </ion-content>

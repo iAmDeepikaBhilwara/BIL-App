@@ -5,19 +5,27 @@
       <ion-img src="/assets/Register.png" height="100px" width="100px"></ion-img>
       
     Already have an account? &nbsp; <a href="login">Sign In</a><br><br>
+    
     <ion-item>
-      <ion-input type="text" placeholder="Name"></ion-input>
+      <ion-icon slot="start"name="person" color="primary"></ion-icon><ion-input type="text" placeholder="Name"></ion-input>
     </ion-item>
-    <ion-item>
-        
-<ion-input type="number" placeholder="Mobile No"></ion-input>
-    </ion-item>
-    <ion-item>
-        
-      <ion-input type="text" placeholder="E-Mail"></ion-input>
-      </ion-item><br>
 
-      
+    <ion-item>
+      <ion-icon slot="start"name="call" color="primary"></ion-icon><ion-input type="number" placeholder="Mobile No"></ion-input>
+    </ion-item>
+
+      <ion-item>
+        <ion-icon slot="start"name="mail" color="primary"></ion-icon><ion-input type="text" placeholder="E-Mail"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon slot="start"name="lock" color="primary"></ion-icon><ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon slot="start"name="unlock" color="primary"></ion-icon><ion-input type="password" placeholder="Confirm Password"></ion-input>
+      </ion-item><br>
+  
 
       <ion-button expand="full"color="primary" (click)="signIn()">Sign Up</ion-button>
       

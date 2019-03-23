@@ -3,24 +3,23 @@
   <ion-card>
       <ion-card-header>
           <ion-card-subtitle>Sign in to continue to</ion-card-subtitle>
-          <ion-card-title>BIL Movie Ticket Booking</ion-card-title>
+          <ion-card-title>BIL App</ion-card-title>
       </ion-card-header>
       <ion-card-content>
+
       <ion-item>
-          <!-- <ion-label position="fixed">Mobile or E-mail</ion-label> -->
-          <ion-input type="text" placeholder="Mobile or E-mail"></ion-input>
-        </ion-item>
+        <ion-icon slot="start"name="mail" color="primary"></ion-icon><ion-input type="text" placeholder="Mobile or E-mail"></ion-input>
+      </ion-item>
 
     <ion-item>
-        <ion-input type="Password" placeholder="Password"></ion-input>
-        <ion-icon name="eye-off" float="right"></ion-icon>
+      <ion-icon slot="start"name="lock" color="primary"></ion-icon><ion-input type="Password" placeholder="Password"></ion-input>
+        
     </ion-item><br><br>
+
     &nbsp;&nbsp;<a href="">Forgot Password?</a><br><br>
     <ion-button expand="block" color="primary" (click)="Dashboard()">Sign In</ion-button><br><br>
     &nbsp;&nbsp;<ion-text>Don't have an account?</ion-text><a href="register">Sign Up</a>
   </ion-card-content>
     </ion-card>
-
-    
 </ion-content>
 
